@@ -37,8 +37,8 @@ function App() {
 
     try {
 
-      const response = await (
-        " https://careerwise-x5sb.onrender.com/upload-resume",
+      const response = await fetch(
+        "https://careerwise-x5sb.onrender.com/upload-resume",
         {
           method: "POST",
           body: formData,
