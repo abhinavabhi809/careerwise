@@ -12,6 +12,8 @@ function App() {
   const [careerRecommendations, setCareerRecommendations] =
     useState([]);
 
+  const bestCareer = careerRecommendations[0];
+
   const [loading, setLoading] = useState(false);
 
 
@@ -237,73 +239,44 @@ function App() {
 
 
 
-        {/* ======================================
-            Example Match Card
-        ====================================== */}
-
         <div className="match-card">
-
           <div className="card-header">
-
-            <span>
-              Career Match
-            </span>
-
-            <span className="card-dot">
-              ●
-            </span>
-
+            <span>{bestCareer ? "Your Best Career Match" : "Career Match"}</span>
+            <span className="card-dot">●</span>
           </div>
 
+          {bestCareer ? (
+            <>
+              <h2>{bestCareer.career}</h2>
+              <p>The strongest match based on the skills found in your resume.</p>
 
-          <h2>
-            Software Developer
-          </h2>
+              <div className="match-score">
+                <strong>{bestCareer.match_score}%</strong>
+                <span>Match</span>
+              </div>
 
+              <div className="progress-container">
+                <div
+                  className="progress-bar"
+                  style={{ width: `${bestCareer.match_score}%` }}
+                ></div>
+              </div>
 
-          <p>
-            Your skills match this career
-            particularly well.
-          </p>
-
-
-          <div className="match-score">
-
-            <strong>
-              87%
-            </strong>
-
-            <span>
-              Match
-            </span>
-
-          </div>
-
-
-          <div className="progress-container">
-
-            <div
-              className="progress-bar"
-              style={{
-                width: "87%"
-              }}
-            ></div>
-
-          </div>
-
-
-          <div className="card-footer">
-
-            <span>
-              Skills
-            </span>
-
-            <span>
-              Python · React · SQL
-            </span>
-
-          </div>
-
+              <div className="card-footer">
+                <span>Matched skills</span>
+                <span>
+                  {bestCareer.matched_skills.length > 0
+                    ? bestCareer.matched_skills.join(" · ")
+                    : "No matching skills found"}
+                </span>
+              </div>
+            </>
+          ) : (
+            <>
+              <h2>Find your best match</h2>
+              <p>Upload your resume and your strongest career match will appear here.</p>
+            </>
+          )}
         </div>
 
       </section>
@@ -437,7 +410,7 @@ function App() {
                 <div className="career-list">
 
 
-                  {careerRecommendations.map(
+                  {careerRecommendations.slice(0, 1).map(
                     (career) => (
 
                       <div
