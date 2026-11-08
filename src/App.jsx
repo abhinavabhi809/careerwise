@@ -12,7 +12,10 @@ function App() {
   const [careerRecommendations, setCareerRecommendations] =
     useState([]);
 
-  const bestCareer = careerRecommendations[0];
+  const compatibleCareers = careerRecommendations.filter(
+  (career) => career.match_score > 0
+);
+const bestCareer = compatibleCareers[0];
 
   const [loading, setLoading] = useState(false);
 
@@ -413,7 +416,7 @@ function App() {
                 Career Recommendations
             ================================== */}
 
-            {careerRecommendations.length > 0 && (
+            {compatibleCareers.length > 0 && (
 
               <div className="career-results">
 
@@ -435,7 +438,7 @@ function App() {
                 <div className="career-list">
 
 
-                  {careerRecommendations.map(
+                  {compatibleCareers.map(
                     (career) => (
 
                       <div
