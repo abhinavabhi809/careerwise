@@ -171,6 +171,11 @@ function App() {
             <br />
             that fits you.
           </h1>
+          <h2>All Career Matches</h2>
+
+<p className="career-description">
+  Careers are ranked from highest to lowest based on the skills found in your resume.
+</p>
 
 
           <p className="hero-description">
@@ -430,7 +435,7 @@ function App() {
                 <div className="career-list">
 
 
-                  {careerRecommendations.slice(0, 1).map(
+                  {careerRecommendations.map(
                     (career) => (
 
                       <div
