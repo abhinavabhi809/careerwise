@@ -48,5 +48,100 @@
       "rest api",
       "git"
     ]
+  },  {
+    "title": "Accountant",
+    "required_skills": ["accounting", "bookkeeping", "excel", "budgeting"]
+  },
+  {
+    "title": "Financial Analyst",
+    "required_skills": ["financial analysis", "financial modeling", "excel", "forecasting"]
+  },
+  {
+    "title": "Digital Marketing Specialist",
+    "required_skills": ["digital marketing", "seo", "content writing", "market research"]
+  },
+  {
+    "title": "Human Resources Specialist",
+    "required_skills": ["human resources", "recruitment", "communication", "training"]
+  },
+  {
+    "title": "Sales Representative",
+    "required_skills": ["sales", "negotiation", "crm", "communication"]
+  },
+  {
+    "title": "Project Manager",
+    "required_skills": ["project management", "leadership", "communication", "budgeting"]
+  },
+  {
+    "title": "Customer Support Specialist",
+    "required_skills": ["customer service", "communication", "crm", "problem solving"]
+  },
+  {
+    "title": "Supply Chain Coordinator",
+    "required_skills": ["supply chain", "logistics", "inventory management", "excel"]
+  },
+  {
+    "title": "UI/UX Designer",
+    "required_skills": ["figma", "ux design", "wireframing", "prototyping"]
+  },
+  {
+    "title": "Graphic Designer",
+    "required_skills": ["graphic design", "adobe photoshop", "adobe illustrator", "visual design"]
+  },
+  {
+    "title": "Content Writer",
+    "required_skills": ["content writing", "copywriting", "storytelling", "seo"]
+  },
+  {
+    "title": "Teacher",
+    "required_skills": ["teaching", "lesson planning", "classroom management", "communication"]
+  },
+  {
+    "title": "Instructional Designer",
+    "required_skills": ["instructional design", "curriculum development", "teaching", "storytelling"]
+  },
+  {
+    "title": "Registered Nurse",
+    "required_skills": ["nursing", "patient care", "first aid", "medical terminology"]
+  },
+  {
+    "title": "Medical Laboratory Technician",
+    "required_skills": ["laboratory testing", "biology", "chemistry", "medical terminology"]
+  },
+  {
+    "title": "Civil Engineer",
+    "required_skills": ["civil engineering", "autocad", "structural design", "project management"]
+  },
+  {
+    "title": "Mechanical Engineer",
+    "required_skills": ["mechanical engineering", "solidworks", "autocad", "problem solving"]
+  },
+  {
+    "title": "Electrical Engineer",
+    "required_skills": ["electrical engineering", "circuits", "plc", "troubleshooting"]
+  },
+  {
+    "title": "Environmental Scientist",
+    "required_skills": ["environmental science", "gis", "research", "data analysis"]
+  },
+  {
+    "title": "Research Assistant",
+    "required_skills": ["research", "statistics", "data analysis", "communication"]
+  },
+  {
+    "title": "Cybersecurity Analyst",
+    "required_skills": ["cybersecurity", "networking", "linux", "risk assessment"]
+  },
+  {
+    "title": "Event Coordinator",
+    "required_skills": ["event planning", "communication", "budgeting", "logistics"]
+  },
+  {
+    "title": "Social Media Manager",
+    "required_skills": ["social media management", "digital marketing", "content writing", "market research"]
+  },
+  {
+    "title": "Quality Assurance Tester",
+    "required_skills": ["software testing", "attention to detail", "problem solving", "documentation"]
   }
 ]
