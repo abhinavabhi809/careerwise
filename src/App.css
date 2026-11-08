@@ -743,3 +743,64 @@ footer span {
   }
 
 }
+.theme-toggle {
+  margin-left: 12px;
+  padding: 10px 14px;
+  border: 1px solid #d6d7df;
+  border-radius: 8px;
+  background: white;
+  color: #171923;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.dark-mode {
+  background: #101116;
+  color: #f5f5f7;
+}
+
+.dark-mode .navbar,
+.dark-mode .hero,
+.dark-mode .about {
+  background: #171923;
+  color: #f5f5f7;
+  border-color: #30323d;
+}
+
+.dark-mode .nav-links a,
+.dark-mode .hero-description,
+.dark-mode .about > p:last-child {
+  color: #c2c4d0;
+}
+
+.dark-mode .resume-section,
+.dark-mode .how-it-works {
+  background: #101116;
+}
+
+.dark-mode .resume-text-box,
+.dark-mode .career-card,
+.dark-mode .feature-card {
+  background: #1b1d27;
+  border-color: #30323d;
+  color: #f5f5f7;
+}
+
+.dark-mode .resume-text-box pre,
+.dark-mode .career-card-header p,
+.dark-mode .career-description,
+.dark-mode .skills-result p,
+.dark-mode .feature-card p {
+  color: #c2c4d0;
+}
+
+.dark-mode .career-results,
+.dark-mode .skills-result {
+  border-color: #30323d;
+}
+
+.dark-mode .theme-toggle {
+  background: #30323d;
+  border-color: #555866;
+  color: #f5f5f7;
+}
