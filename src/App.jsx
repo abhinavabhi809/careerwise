@@ -11,6 +11,7 @@ function App() {
 
   const [careerRecommendations, setCareerRecommendations] =
     useState([]);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const compatibleCareers = careerRecommendations.filter(
   (career) => career.match_score > 0
@@ -110,8 +111,7 @@ const bestCareer = compatibleCareers[0];
 
   return (
 
-    <div className="app">
-
+<div className={`app ${isDarkMode ? "dark-mode" : ""}`}>
 
       {/* ======================================
           Navigation
@@ -147,7 +147,12 @@ const bestCareer = compatibleCareers[0];
         >
           Get Started
         </a>
-
+<button
+  className="theme-toggle"
+  onClick={() => setIsDarkMode(!isDarkMode)}
+>
+  {isDarkMode ? "☀ Light Mode" : "🌙 Dark Mode"}
+</button>
       </nav>
 
 
