@@ -273,8 +273,28 @@ function App() {
             </>
           ) : (
             <>
-              <h2>Find your best match</h2>
-              <p>Upload your resume and your strongest career match will appear here.</p>
+              <h2>Software Developer</h2>
+              <p>
+                Your skills match this career
+                particularly well.
+              </p>
+
+              <div className="match-score">
+                <strong>87%</strong>
+                <span>Match</span>
+              </div>
+
+              <div className="progress-container">
+                <div
+                  className="progress-bar"
+                  style={{ width: "87%" }}
+                ></div>
+              </div>
+
+              <div className="card-footer">
+                <span>Skills</span>
+                <span>Python · React · SQL</span>
+              </div>
             </>
           )}
         </div>
